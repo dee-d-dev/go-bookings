@@ -30,24 +30,7 @@
       href="https://cdn.jsdelivr.net/npm/sweetalert2@10.15.5/dist/sweetalert2.min.css"
     />
 
-    <style>
-      .my-footer {
-        height: 5em;
-        background-color: #163b65;
-        margin-top: 1.5em;
-        padding: 1em;
-        color: white;
-        font-size: 80%;
-      }
-
-      .notie-container {
-        box-shadow: none;
-      }
-
-      .datepicker {
-        z-index: 10000;
-      }
-    </style>
+    <link rel="stylesheet" href="./static/css/style.css" />
   </head>
 
   <body>
@@ -244,7 +227,7 @@
 
       const elem = document.getElementById("reservation-dates");
       const rangePicker = new DateRangePicker(elem, {
-        format: "yyyy-mm-dd",
+        format: "dd-mm-yyyy",
       });
 
       function notify(msg, msgType) {
